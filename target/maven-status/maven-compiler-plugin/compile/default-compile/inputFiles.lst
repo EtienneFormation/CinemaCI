@@ -1,0 +1,13 @@
+D:\Eclipse_workspaces\securiteSpring\EvaluationCinema_CI\src\rest\SimpleFilm.java
+D:\Eclipse_workspaces\securiteSpring\EvaluationCinema_CI\src\event\PDFEvent.java
+D:\Eclipse_workspaces\securiteSpring\EvaluationCinema_CI\src\dal\SessionSingleton.java
+D:\Eclipse_workspaces\securiteSpring\EvaluationCinema_CI\src\dal\FilmDao.java
+D:\Eclipse_workspaces\securiteSpring\EvaluationCinema_CI\src\rest\FilmController.java
+D:\Eclipse_workspaces\securiteSpring\EvaluationCinema_CI\src\servlets\ServletGenererPDF.java
+D:\Eclipse_workspaces\securiteSpring\EvaluationCinema_CI\src\servlets\ServletAccueil.java
+D:\Eclipse_workspaces\securiteSpring\EvaluationCinema_CI\src\servlets\ServletSupprimerFilm.java
+D:\Eclipse_workspaces\securiteSpring\EvaluationCinema_CI\src\servlets\ServletModifierFilm.java
+D:\Eclipse_workspaces\securiteSpring\EvaluationCinema_CI\src\bo\Film.java
+D:\Eclipse_workspaces\securiteSpring\EvaluationCinema_CI\src\dal\FilmDaoHibernateImpl.java
+D:\Eclipse_workspaces\securiteSpring\EvaluationCinema_CI\src\bll\FilmManager.java
+D:\Eclipse_workspaces\securiteSpring\EvaluationCinema_CI\src\bo\Seance.java
