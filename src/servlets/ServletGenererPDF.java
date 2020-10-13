@@ -54,14 +54,14 @@ public class ServletGenererPDF extends HttpServlet {
 		
 		List<Film> films = fm.selectAll();
 		
-		// Création de notre objet Document, racine de notre représentation PDF
+		// Cration de notre objet Document, racine de notre reprsentation PDF
 		Document document = new Document();
 		
-		//Ouverture d'un flux pour écrire dans le fichier "helloWorld.pdf"
+		//Ouverture d'un flux pour crire dans le fichier "helloWorld.pdf"
 		ByteArrayOutputStream out = new ByteArrayOutputStream();
 
 		try {
-        	// On associe le document et le flux précédemment créés
+        	// On associe le document et le flux prcdemment crs
             PdfWriter writer = PdfWriter.getInstance(document, out);
             
             String relativeWebPath = "/images/epsi.png";
@@ -69,8 +69,8 @@ public class ServletGenererPDF extends HttpServlet {
             
             writer.setPageEvent(new PDFEvent(absoluteDiskPath));
             
-            // L'écriture du PDF commence à cette ligne :
-            // document.open signale que nous commençons à écrire dans notre document
+            // L'criture du PDF commence  cette ligne :
+            // document.open signale que nous commenons  crire dans notre document
             document.open();
             
             for (int i=0; i<films.size(); i++) {
@@ -89,7 +89,7 @@ public class ServletGenererPDF extends HttpServlet {
 	            table.setWidthPercentage(30); // Mon tableau prendra 80% de l'ecran
 	            table.setWidths(new int[]{1, 1});
 
-	            // Creation des cellules servant d'intitulés de colonnes
+	            // Creation des cellules servant d'intituls de colonnes
 	            PdfPCell hcell;
 	            hcell = new PdfPCell(new Phrase("Salle"));
 	            hcell.setHorizontalAlignment(Element.ALIGN_CENTER);
@@ -100,7 +100,7 @@ public class ServletGenererPDF extends HttpServlet {
 	            table.addCell(hcell);
 
 	            for (Seance seance : film.getSeances()) {
-	            	// Pour chaque client, on crée 4 cellules, une pour chaque attribut
+	            	// Pour chaque client, on cre 4 cellules, une pour chaque attribut
 	                PdfPCell cell;
 
 	                cell = new PdfPCell(new Phrase(String.valueOf(seance.getSalle())));
@@ -120,7 +120,7 @@ public class ServletGenererPDF extends HttpServlet {
 				document.add(table);
             }
             
-            // Une fois l'écriture terminée, on ferme le document
+            // Une fois l'criture termine, on ferme le document
             document.close();
         } catch (DocumentException ex) {
         	ex.printStackTrace();
